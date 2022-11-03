@@ -1,8 +1,12 @@
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div>IMDB Web App</div>
+    <>
+      <NavBar/>
+      <div className='app'></div>
+    </>
   );
 }
 

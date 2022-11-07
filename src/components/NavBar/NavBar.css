@@ -1,32 +1,31 @@
-.navbar-title {
-    color: #0c0b00;
+.navbar {
     padding: 1rem 0;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: center;
+    background-color: #deb522;
+    box-shadow: 0 0 5px #0c0b00;
+    z-index: 100;
+}
+.navbar-title {
+    color: #0c0b00;
     font-size: 30px;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: #deb522;
-    box-shadow: 0 0 5px #cecece;
-    z-index: 100;
 }
 .navbar-span {
-    color: #ffffff;
+    color: #fcf7f7;
     padding: 1rem 2rem;
     top: 50px;
     right: 50px;
     position: fixed;
-    display: flex;
-    justify-content: center;
     font-size: 10px;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     border-radius: 100px;
     background-color: #0c0b00;
-    box-shadow: 0 0 5px #cecece;
-    z-index: 100;
+    box-shadow: 0 0 5px #0c0b00;
 }

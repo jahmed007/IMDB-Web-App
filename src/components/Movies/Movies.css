@@ -3,6 +3,7 @@
     position: absolute;
     display: flex;
 }
+
 .movies-popular-title {
     color: #fcf7f7;
     margin: 0 2rem;
@@ -13,8 +14,10 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+
 .movie-poster {
     margin: 0 1rem;
     border-radius: 20px;
     box-shadow: 0 5px 5px #0c0b00;
+    height: 370px;
 }

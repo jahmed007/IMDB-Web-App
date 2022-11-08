@@ -10,6 +10,7 @@ const App = () => {
     const response = await fetch(url);
     const responseJSON = await response.json();
     setMovies(responseJSON.Search);
+    console.log(movies)
   };
   useEffect(() => {
     getMovies();
@@ -17,9 +18,9 @@ const App = () => {
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <div className='app'>
-        <Movies movies={movies}/>
+        <Movies movies={movies} />
       </div>
     </>
   );

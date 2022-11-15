@@ -6,10 +6,11 @@ import { Movie } from '@mui/icons-material';
 export function MovieDetails({ movie }) {
 
     return (
-        <div>
+        <div className='showDetails'>
             <ul>
-                <p>{movie.Title}</p>
-                <p>{movie.Year}</p>
+                <h2>{movie.show.name}</h2>
+                <p>{movie.show.summary}</p>
+                <p>{movie.show.premiered}</p>
             </ul>
         </div>
     )

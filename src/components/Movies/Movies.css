@@ -21,3 +21,12 @@
     box-shadow: 0 5px 5px #0c0b00;
     height: 370px;
 }
+
+.showDetails {
+    background-color: #deb522;
+    border-radius: 20px;
+    border-color: #0c0b00;
+    border-style: solid;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

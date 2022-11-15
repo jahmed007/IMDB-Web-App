@@ -14,10 +14,10 @@ const Movies = (props) => {
         <div>
             <div className='movies'>
                 <h2 className='movies-popular-title'>Popular Movies<hr></hr></h2>
-                {props.movies.map((movie, index) => <div><img className='movie-poster' src={movie.Poster} alt={movie.movie} onClick={handleClick}>
+                {props.movies.map((movie) => <div><img className='movie-poster' src={"https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg"} alt={movie.movie} onClick={handleClick}>
                 </img>{showDetails ? <MovieDetails movie={movie} /> : ""}</div>
                 )}
-                )
+
             </div>
         </div >
     );
@@ -31,3 +31,6 @@ export default Movies;
 //     </div>
 
 // { showDetails && <MovieDetails/>}
+
+{/* <img className='movie-poster' src={"https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg"} alt={movie.movie} onClick={handleClick}>
+</img>{ showDetails ? <MovieDetails movie={movie} /> : "" } */}

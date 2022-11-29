@@ -1,22 +1,22 @@
 import './Movies.css';
-import React from 'react';
-import { useState } from 'react'
-import { MovieDetails } from './MovieDetails'
+import React, { useState } from 'react';
+import MoviesInfo from './MoviesInfo';
 
 const Movies = (props) => {
-
-    const [showDetails, setShowDetails] = useState(false)
-    const handleClick = event => {
-        setShowDetails(!showDetails)
-        console.log('Image clicked');
+    const [movieInfo, setmovieInfo] = useState(false);
+    const toggleInfo = event => {
+        setmovieInfo(!movieInfo);
     };
+
+
     return (
         <div>
             <div className='movies'>
                 <h2 className='movies-popular-title'>Popular Movies<hr></hr></h2>
-                {props.movies.map((movie, index) => <img className='movie-poster' src={movie.show.image.medium} onClick={handleClick}></img>
-                {showDetails ? <MovieDetails movie={movie} /> : ""}
-                )}
+                {props.movies.map((movie) => <div><img className='movie-poster' src={movie.show.image.medium} alt={movie.movie} onClick={(toggleInfo)}>
+                </img>{movieInfo ? <MoviesInfo movie={movie}/> : ""}</div>
+                )};
+
             </div>
         </div >
     );

@@ -1,0 +1,8 @@
+.movies-info {
+    margin: 0 1rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0 0 20px 20px;
+    background-color: #deb522;
+    box-shadow: 0 5px 5px #0c0b00;
+}

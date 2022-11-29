@@ -1,5 +1,5 @@
 .movies {
-    top: 175px;
+    top: 275px;
     position: absolute;
     display: flex;
 }
@@ -17,16 +17,5 @@
 
 .movie-poster {
     margin: 0 1rem;
-    border-radius: 20px;
-    box-shadow: 0 5px 5px #0c0b00;
-    height: 370px;
-}
-
-.showDetails {
-    background-color: #deb522;
-    border-radius: 20px;
-    border-color: #0c0b00;
-    border-style: solid;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px 20px 0 0;
 }

@@ -6,6 +6,7 @@ import Movies from './components/Movies/Movies';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+
   const [searchValue, setSearchValue] = useState('');
 
   const getMovies = async (searchValue) => {
@@ -21,7 +22,7 @@ const App = () => {
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <div className='app'>
         <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
         <Movies movies={movies}/>
@@ -29,5 +30,6 @@ const App = () => {
     </>
   );
 }
+ 
 
 export default App;

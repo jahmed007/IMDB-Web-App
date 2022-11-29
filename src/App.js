@@ -11,6 +11,7 @@ const App = () => {
     const responseJSON = await response.json();
     setMovies(responseJSON);
     console.log(responseJSON);
+
   };
   useEffect(() => {
     getMovies();
@@ -18,9 +19,9 @@ const App = () => {
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <div className='app'>
-        <Movies movies={movies}/>
+        <Movies movies={movies} />
       </div>
     </>
   );

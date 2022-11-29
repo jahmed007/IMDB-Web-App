@@ -14,14 +14,14 @@ const Movies = (props) => {
         <div>
             <div className='movies'>
                 <h2 className='movies-popular-title'>Popular Movies<hr></hr></h2>
-                {props.movies.map((movie) => <div><img className='movie-poster' src={"https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg"} alt={movie.movie} onClick={handleClick}>
-                </img>{showDetails ? <MovieDetails movie={movie} /> : ""}</div>
+                {props.movies.map((movie, index) => <img className='movie-poster' src={movie.show.image.medium} onClick={handleClick}></img>
+                {showDetails ? <MovieDetails movie={movie} /> : ""}
                 )}
-
             </div>
         </div >
     );
 }
+
 
 export default Movies;
 
@@ -34,3 +34,4 @@ export default Movies;
 
 {/* <img className='movie-poster' src={"https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg"} alt={movie.movie} onClick={handleClick}>
 </img>{ showDetails ? <MovieDetails movie={movie} /> : "" } */}
+
